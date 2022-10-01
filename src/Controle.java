@@ -19,7 +19,7 @@ public class Controle {
                 case 1:
                     AC.liga_desliga();
                     break;
-                    
+
                 case 2:
                     AC.modoop();
                     break;
@@ -39,11 +39,12 @@ public class Controle {
                 case 6:
                     System.exit(0);
                     break;
-                    
                 default:
                     System.out.println("Opção invalida");
             }
 
         } while (op != 6);
+
+        leia.close();
     }
 }

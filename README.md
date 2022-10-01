@@ -1,6 +1,7 @@
 ## Getting Started
 
-Opa, isso daqui é um exercício em java que simula o funcionamento de um ArCondicionado, ainda não está.
+E aí, isso daqui está quase pronto apenas falta lapidar alguns elementos, então digamos que está funcional é de certa forma uma coisa boa, bom comforme 
+o trabalho ficar pronto, melhor ele irá ficar. S2
 
 ## Folder Structure
 
@@ -11,7 +12,7 @@ The workspace contains two folders by default, where:
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+
 
 ## Dependency Management
 
