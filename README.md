@@ -1,7 +1,6 @@
 ## Getting Started
-
-E aí, isso daqui está quase pronto apenas falta lapidar alguns elementos, então digamos que está funcional é de certa forma uma coisa boa, bom comforme 
-o trabalho ficar pronto, melhor ele irá ficar. S2
+Um trabalho usando Java, que simula o funcionamento de um arcondicionado
+É isso, essa maravilha está pronta, tomara que eu consiga uma nota boa com isso
 
 ## Folder Structure
 

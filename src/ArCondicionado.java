@@ -56,9 +56,14 @@ public class ArCondicionado {
                     temperatura++;
                     System.out.println("Temperatura aumentada para " + temperatura + "ºC");
                 }
-            }
+            } else if (modooperacao == "v" || modooperacao == "d") {
+                System.out.println("Não possivel aumentar a temperatura nesse modo de operação");
         }
-    }
+        }else {
+            System.out.println("Não é possível aumentar a temperatura com o ar desligado");
+        }
+        }
+    
 
     // diminuirTemperatura
     public void diminuirTemperatura() {
@@ -68,24 +73,53 @@ public class ArCondicionado {
                     temperatura--;
                     System.out.println("Temperatura diminuída para " + temperatura + "ºC");
                 }
-            }
+            }else if (modooperacao == "v" || modooperacao == "d") {
+                System.out.println("Não possivel diminuir a temperatura nesse modo de operação");
+        }
+        } else {
+            System.out.println("Não é possivel diminuir a temperatura com o ar desligado");
         }
     }
 
     // STATUS
     public void exibirStatus() {
+        // if (!estaligado) {
+        // System.out.println("Ar condicionado desligado");
+        // } else if {
+        // System.out.println("Marca.:" + marca);
+        // System.out.println("Modelo.:" + modelo);
+        // System.out.println("Capacidade." + capacidade);
+        // else if (modooperacao == "r") {
+        // System.out.println("Modo.: Refrigeração");
+        // System.out.println("Temperatura.:" + temperatura + "C");
+        // } else {
+        // System.out.println("Modo.: ");
+        // }
+        // }
+        // }
         if (!estaligado) {
-            System.out.println("Ar condicionado desligado");
-        } else {
-            System.out.println("Marca.:" + marca);
-            System.out.println("Modelo.:" + modelo);
-            System.out.println("Capacidade." + capacidade);
-            if (modooperacao == "r") {
-                System.out.println("Modo.: Refrigeração");
-                System.out.println("Temperatura.:" + temperatura + "C");
-            } else {
-                System.out.println("Modo.: Ventilação");
-            }
+            System.out.println("O Ar Condicionado está desligado");
+        } else if (modooperacao == "r") {
+            System.out.println("Marca.: " + marca);
+            System.out.println("Modelo.: " + modelo);
+            System.out.println("Capacidade.: " + capacidade);
+            System.out.println("Modo.: Refrigeração");
+            System.out.println("A temperatura atual é " + temperatura + " ºC");
+        } else if (modooperacao == "d") {
+            System.out.println("Marca.: " + marca);
+            System.out.println("Modelo.: " + modelo);
+            System.out.println("Capacidade.: " + capacidade);
+            System.out.println("Modo.: Desumidificação");
+        } else if (modooperacao == "v") {
+            System.out.println("Marca.: " + marca);
+            System.out.println("Modelo.: " + modelo);
+            System.out.println("Capacidade.: " + capacidade);
+            System.out.println("Modo.: Ventilação");
+        } else if (modooperacao == "a") {
+            System.out.println("Marca.: " + marca);
+            System.out.println("Modelo.: " + modelo);
+            System.out.println("Capacidade.: " + capacidade);
+            System.out.println("Modo.: Aquecimento");
         }
     }
 
